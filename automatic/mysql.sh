@@ -8,7 +8,6 @@ sudo yum install git zip unzip mariadb-server -y
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 
-mkdir /tmp
 cd /tmp/
 git clone -b local-setup https://github.com/achroo-82/vprofile-project.git
 

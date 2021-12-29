@@ -50,10 +50,12 @@ sudo systemctl enable tomcat
 
 git clone -b local-setup https://github.com/achroo-82/vprofile-project.git
 cd vprofile-project
-
+mvn install
 sudo systemctl stop tomcat
 sleep 60
 sudo rm -rf /usr/local/tomcat8/webapps/ROOT*
 sudo cp target/vprofile-v2.war /usr/local/tomcat8/webapps/ROOT.war
 sudo systemctl start tomcat
 sleep 120
+sudo cp /vagrant/application.properties /usr/local/tomcat8/webapps/ROOT/WEB-INF/classes/application.properties
+systemctl restart tomcat
