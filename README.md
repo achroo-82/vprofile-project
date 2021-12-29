@@ -1,1 +1,1 @@
-# Terraform code for vprofile project.
+# Cloudformation code for vprofile project.

@@ -1,9 +1,4 @@
-.tfstate
-.tfstate.backup
-.terraform/*
 vprofilekey
 vprofilekey.pub
-.terraform.lock.hcl
-.terraform/providers/registry.terraform.io/hashicorp/aws/3.70.0/windows_amd64/terraform-provider-aws_v3.70.0_x5.exe
-.terraform/terraform.tfstate
 .idea
+useast.pem
